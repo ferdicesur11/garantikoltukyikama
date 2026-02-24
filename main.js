@@ -15,25 +15,6 @@ function initContent() {
     document.getElementById('contact-phone').textContent = companyInfo.phone;
     document.getElementById('google-map').src = companyInfo.mapUrl;
 
-
-    const featuresList = document.getElementById('features-list');
-    featuresList.innerHTML = '';
-    features.forEach(feature => {
-        const div = document.createElement('div');
-        div.className = 'flex gap-4';
-        div.innerHTML = `
-            <div class="flex-shrink-0 w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center text-sky-600">
-                <i data-lucide="${feature.icon}" class="w-5 h-5"></i>
-            </div>
-            <div>
-                <h4 class="text-lg font-bold text-slate-900">${feature.title}</h4>
-                <p class="text-slate-500 text-sm mt-1">${feature.desc}</p>
-            </div>
-        `;
-        featuresList.appendChild(div);
-    });
-
-
     lucide.createIcons();
 }
 
