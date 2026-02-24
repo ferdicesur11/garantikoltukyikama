@@ -16,22 +16,6 @@ function initContent() {
     document.getElementById('google-map').src = companyInfo.mapUrl;
 
 
-    const servicesGrid = document.getElementById('services-grid');
-    servicesGrid.innerHTML = '';
-    services.forEach(service => {
-        const div = document.createElement('div');
-        div.className = 'glass-card p-8 rounded-2xl hover:shadow-xl transition-all duration-300 group hover:-translate-y-2';
-        div.innerHTML = `
-            <div class="w-14 h-14 bg-sky-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-sky-600 transition-colors duration-300">
-                <i data-lucide="${service.icon}" class="w-7 h-7 text-sky-600 group-hover:text-white transition-colors duration-300"></i>
-            </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">${service.title}</h3>
-            <p class="text-slate-500 leading-relaxed text-sm">${service.description}</p>
-        `;
-        servicesGrid.appendChild(div);
-    });
-
-
     const featuresList = document.getElementById('features-list');
     featuresList.innerHTML = '';
     features.forEach(feature => {
@@ -47,29 +31,6 @@ function initContent() {
             </div>
         `;
         featuresList.appendChild(div);
-    });
-
-
-    const testimonialsGrid = document.getElementById('testimonials-grid');
-    testimonialsGrid.innerHTML = '';
-    testimonials.forEach(t => {
-        const stars = Array(t.rating).fill('<i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>').join('');
-        const div = document.createElement('div');
-        div.className = 'bg-slate-800 p-8 rounded-2xl border border-slate-700 relative';
-        div.innerHTML = `
-            <div class="flex gap-1 mb-4">${stars}</div>
-            <p class="text-slate-300 mb-6 italic">"${t.text}"</p>
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center font-bold text-sky-400">
-                    ${t.name.charAt(0)}
-                </div>
-                <div>
-                    <h5 class="font-bold text-white text-sm">${t.name}</h5>
-                    <span class="text-xs text-slate-500">${t.location}</span>
-                </div>
-            </div>
-        `;
-        testimonialsGrid.appendChild(div);
     });
 
 
