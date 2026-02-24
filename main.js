@@ -33,6 +33,7 @@ function initContent() {
 
 
     const featuresList = document.getElementById('features-list');
+    featuresList.innerHTML = '';
     features.forEach(feature => {
         const div = document.createElement('div');
         div.className = 'flex gap-4';
@@ -50,6 +51,7 @@ function initContent() {
 
 
     const testimonialsGrid = document.getElementById('testimonials-grid');
+    testimonialsGrid.innerHTML = '';
     testimonials.forEach(t => {
         const stars = Array(t.rating).fill('<i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>').join('');
         const div = document.createElement('div');
