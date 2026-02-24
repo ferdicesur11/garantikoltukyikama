@@ -76,6 +76,30 @@ export const testimonials = [
         text: "Bu kadar temiz olacağını beklemiyordum. Yataklarım bembeyaz oldu. Kesinlikle tavsiye ederim.",
         rating: 5,
         location: "Ataşehir"
+    },
+    {
+        name: "Fatih Özdemir",
+        text: "Ofis koltuklarımızı temizlettik, sonuç muhteşem. Profesyonel davranış ve hızlı hizmet.",
+        rating: 5,
+        location: "Beşiktaş"
+    },
+    {
+        name: "Zeynep Korkutata",
+        text: "Yatak ve yatağın altındaki döşemeleri temizlediler. Her şey havai gibi oldu!",
+        rating: 5,
+        location: "Kadıköy"
+    },
+    {
+        name: "İbrahim Çelik",
+        text: "Aracımın koltuğu artık yeni gibi. Hijyenik ve temiz ortamda olmak çok hoş.",
+        rating: 5,
+        location: "Maltepe"
+    },
+    {
+        name: "Leman Aydın",
+        text: "24 saat hizmet gerçekten çok faydalı oldu. Gece yarısı aradık ve hemen geldiler.",
+        rating: 5,
+        location: "Pendik"
     }
 ];
 
