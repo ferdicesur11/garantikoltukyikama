@@ -44,19 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, '-=0.6');
 
 
-    gsap.from('#services-grid > div', {
-        scrollTrigger: {
-            trigger: '#services-grid',
-            start: 'top 80%',
-        },
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.2,
-        ease: 'power2.out'
-    });
-
-
     gsap.from('#features-list > div', {
         scrollTrigger: {
             trigger: '#features-list',
@@ -66,19 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
         opacity: 0,
         duration: 0.8,
         stagger: 0.15,
-        ease: 'power2.out'
-    });
-
-
-    gsap.from('#testimonials-grid > div', {
-        scrollTrigger: {
-            trigger: '#testimonials-grid',
-            start: 'top 80%',
-        },
-        y: 30,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.2,
         ease: 'power2.out'
     });
 });
