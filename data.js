@@ -2,7 +2,7 @@ export const companyInfo = {
     name: "Garanti Yerinde Koltuk Yıkama",
     phone: "0505 960 74 05",
     whatsapp: "905059607405", // Format for API
-    address: "Ihlamurkuyu Mahallesi, Çanakkale Caddesi No: 81, Ümraniye / İstanbul",
+    address: "Ihlamurkuyu Mahallesi, Ümraniye / İstanbul",
     hours: "24 Saat Hizmetinizdeyiz",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.973687648356!2d29.1437!3d41.0125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb7e9c9c9c9c%3A0x1234567890abcdef!2zSWhsYW11cmt1eXUgTWFoYWxsZXNpLCMODFuYWtrYWxlIENhZGRlc2kgTm86IDgxLCDDn21yYW5peWUvSXN0YW5idWw!5e0!3m2!1str!2str!4v1625555555555!5m2!1str!2str" 
 
